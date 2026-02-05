@@ -1,23 +1,22 @@
 /* Override existing styles for .status-box */
-.status-box {
-    /* Example of reducing size and changing background color */
-    width: 80%;         /* Adjust width as necessary */
-    height: 50px;       /* Adjust height as necessary */
-    background-color: lightgray; /* Change background color */
-    padding: 10px;      /* Optional padding */
-    border-radius: 5px; /* Optional border radius */
+div.status-box {
+    width: 80% !important;    /* Use !important to override other styles */
+    height: 50px !important;  /* Use !important to enforce height change */
+    background-color: lightgray !important; /* Change background color */
+    padding: 10px !important;   /* Optional padding */
+    border-radius: 5px !important;  /* Optional border radius */
 }
 
-/* Style adjustments for the images */
-.status-box img {
-    height: 30px; /* Change height of icons */
-    margin-right: 5px; /* Add space between images */
+/* Style adjustments for the images within status-box */
+div.status-box img {
+    height: 30px !important;  /* Use !important to change image sizes */
+    margin-right: 5px !important; /* Add space between images */
 }
 
 /* Adjust iframe to be smaller */
-#oceanpayment-iframe-region {
-    height: 100px; /* Change height to desired size */
-    /* Optional to constrain width */
-    max-width: 800px; /* Set a max width for the iframe */
-    border: none; /* Remove default border */
+#iframe.oceanpayment-iframe-region {
+    height: 100px !important;  /* Use !important for height change */
+    width: 100% !important;     /* Use full width */
+    max-width: 800px;          /* Optional max width */
+    border: none !important;    /* Remove default border */
 }
